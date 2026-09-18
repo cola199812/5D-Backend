@@ -36,10 +36,10 @@ mvn spring-boot:run
 
 ```bash
 # 登录
-curl -X POST http://localhost:8080/api/login \
+curl -X POST http://localhost:8088/api/login \
   -H "Content-Type: application/json" \
   -d '{"username":"test","password":"123456"}'
 
 # 访问受保护的 HelloWorld 接口（Basic 认证）
-curl -u test:123456 http://localhost:8080/api/hello
+curl -u test:123456 http://localhost:8088/api/hello
 ```
